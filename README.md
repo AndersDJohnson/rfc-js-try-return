@@ -55,6 +55,33 @@ console.log(a);
 
 Could do similar with `let a`.
 
+Or alternative syntaxes:
+
+```js
+try (const a) {
+  const b = getB();
+  a = getA(b);
+}
+```
+
+Or:
+
+```js
+const a = try {
+  const b = getB();
+  a = getA(b);
+}
+```
+
+Or maybe some new keyword like `hoist`:
+
+```
+try {
+  const b = getB();
+  hoist const a = getA(b);
+}
+```
+
 Even more clean if combined with [rfc-js-try-no-catch](https://github.com/AndersDJohnson/rfc-js-try-no-catch):
 
 ```diff
