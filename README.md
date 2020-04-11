@@ -73,9 +73,9 @@ const a = try {
 }
 ```
 
-Or maybe some new keyword like `hoist`:
+Or maybe some new keyword like `hoist` (either pulls it up one scope or to function scope like `var`):
 
-```
+```js
 try {
   const b = getB();
   hoist const a = getA(b);
