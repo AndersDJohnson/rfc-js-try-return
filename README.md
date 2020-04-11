@@ -19,9 +19,7 @@ and forces us to make `a` a mutable `let` reference:
     const b = getB();
 -   const a = getA(b);
 +   a = getA(b);
-+ } catch (error) {
-+   // etc.
-+ }
++ } catch (error) {}
   console.log(a);
 ```
 
@@ -31,9 +29,7 @@ What if we could capture a variable from the `try` block to be hoisted to the up
 try (a) {
   const b = getB();
   const a = getA(b);
-} catch (error) {
-  // etc.
-}
+} catch (error) {}
 console.log(a);
 ```
 
@@ -47,9 +43,7 @@ Much cleaner diff:
 + try (a) {
     const b = getB();
     const a = getA(b);
-+ } catch (error) {
-+   // etc.
-+ }
++ } catch (error) {}
 console.log(a);
 ```
 
