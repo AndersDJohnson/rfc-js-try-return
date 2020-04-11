@@ -38,6 +38,9 @@ console.log(a);
 ```
 
 which would define a `const a` in the scope outside of the `try`.
+
+This was possible with `var a`, but with those we don't get the other advantages of `const` & `let`.
+
 Much cleaner diff:
 
 ```diff
