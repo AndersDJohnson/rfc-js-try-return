@@ -25,7 +25,7 @@ and forces us to make `a` a mutable `let` reference:
   console.log(a);
 ```
 
-What if we could capture a variable from the `try` block?
+What if we could capture a variable from the `try` block to be hoisted to the upper scope?
 
 ```js
 try (a) {
