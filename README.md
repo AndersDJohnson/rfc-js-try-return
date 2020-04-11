@@ -55,7 +55,7 @@ Or alternative syntaxes:
 try (const a) {
   const b = getB();
   a = getA(b);
-}
+} catch (error) {}
 ```
 
 Or:
@@ -64,7 +64,7 @@ Or:
 const a = try {
   const b = getB();
   a = getA(b);
-}
+} catch (error) {}
 ```
 
 Or maybe some new keyword like `hoist` (either pulls it up one scope or to function scope like `var`):
@@ -73,7 +73,7 @@ Or maybe some new keyword like `hoist` (either pulls it up one scope or to funct
 try {
   const b = getB();
   hoist const a = getA(b);
-}
+} catch (error) {}
 ```
 
 Even more clean if combined with [rfc-js-try-no-catch](https://github.com/AndersDJohnson/rfc-js-try-no-catch):
