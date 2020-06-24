@@ -94,6 +94,17 @@ try {
 } catch (error) {}
 ```
 
+Or:
+
+```js
+const a = try {
+  const b = getB();
+  hoist getA(b);
+} catch (error) {}
+```
+
+---
+
 Even more clean if combined with [rfc-js-try-no-catch](https://github.com/AndersDJohnson/rfc-js-try-no-catch):
 
 ```diff
@@ -103,6 +114,8 @@ Even more clean if combined with [rfc-js-try-no-catch](https://github.com/Anders
 + }
 console.log(a);
 ```
+
+---
 
 Related:
 * https://github.com/AndersDJohnson/rfc-js-catch-no-parentheses
