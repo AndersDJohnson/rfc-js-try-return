@@ -61,6 +61,24 @@ try (const a) {
 Or:
 
 ```js
+const try (a) {
+  const b = getB();
+  a = getA(b);
+} catch (error) {}
+```
+
+Or:
+
+```js
+const a try {
+  const b = getB();
+  a = getA(b);
+} catch (error) {}
+```
+
+Or:
+
+```js
 const a = try {
   const b = getB();
   a = getA(b);
