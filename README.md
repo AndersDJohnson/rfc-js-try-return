@@ -1,5 +1,5 @@
 # rfc-js-try-return
-A proposal for JS `try` to return a variable.
+A proposal for JS `try` to return a variable. Similar to the proposed `do` operator.
 
 Often we start with code like:
 
